@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/project.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+  <div class="app">
+    <nav>
+      <h1 class="logo">Neo Franco</h1>
+      <div class="links">
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </div>
+    </nav>
+    <main>
+      <a name="about"></a>
+      <div class="about">
+        <div class="container">
+          <img src="./assets/cover.png" alt="user's avatar"/>
+          <div class="descriptions">
+            <h1>about me</h1>
+            <p>Proin purus purus eleifend mauris sed. Egestas tempor turpis faucibus a fusce. Libero sed ipsum quam ac. In id et massa leo mattis id donec. Congue facilisi amet, sit felis, mauris eu. Fames dignissim quam etiam felis facilisis enim. Aliquam tortor vitae elit vivamus tortor. Lectus suscipit aenean faucibus ultrices fames mauris. Justo elementum nulla egestas purus facilisi tortor sed tellus.</p>
+            <p>Gravida et, sed amet in facilisis fringilla tempus sit volutpat. Iaculis ullamcorper commodo diam donec pharetra gravida. Pharetra gravida pellentesque urna, amet platea venenatis eget fames velit.</p>
+            <div class="skills">
+              <h2>skills</h2>
+              <div class="skills-container">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>SCSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a name="projects"></a>
+      <div class="projects"> 
+        <div class="container">
+          <h1 class="projects-header">featured work</h1>
+          <div class="carousel">
+            <div class="slides">
+              <div class="slide active">
+                <img src="./assets/icon.png" alt=""/>
+                <span>Project Name</span>
+              </div>
+              <div class="slide next">
+                <img src="./assets/icon.png" alt=""/>
+                <span>Project Name</span>
+              </div>
+              <div class="slide">
+                <img src="./assets/icon.png" alt=""/>
+                <span>Project Name</span>
+              </div>
+              <div class="slide">
+                <img src="./assets/icon.png" alt=""/>
+                <span>Project Name</span>
+              </div>
+              <div class="slide prev">
+                <img src="./assets/icon.png" alt=""/>
+                <span>Project Name</span>
+              </div>
+            </div>
+            <div class="controls">
+              <button class="btn prev">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.707 4.293a1 1 0 0 1 0 1.414L9.414 12l6.293 6.293a1 1 0 0 1-1.414 1.414l-7-7a1 1 0 0 1 0-1.414l7-7a1 1 0 0 1 1.414 0Z" fill="currentColor"/></svg>
+              </button>
+              <button class="btn next">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.293 4.293a1 1 0 0 0 0 1.414L14.586 12l-6.293 6.293a1 1 0 1 0 1.414 1.414l7-7a1 1 0 0 0 0-1.414l-7-7a1 1 0 0 0-1.414 0Z" fill="currentColor"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a name="contact"></a>
+      <div class="contact">
+        <div class="container">
+          <h1>get in touch</h1>
+          <form action="https://getform.io/f/8395b9a9-85d7-4767-a007-ab94acd3b1c4" class="contact-card" id="form" method="POST" autocomplete="off">
+            <input type="text" name="name" placeholder="Name" required/>
+            <input type="email" name="email" placeholder="Email address" required/>
+            <input type="text" name="subject" placeholder="Subject" required/>
+            <textarea name="message" maxlength="250" placeholder="Your message" required></textarea>
+            <button type="submit">Send message</button>
+          </form> 
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="sc-container">
+        <span>connect</span>
+        <div class="sc-logos">
+          <img src="./assets/linkedin-logo.svg" alt="logo" />
+          <span>LinkedIn</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

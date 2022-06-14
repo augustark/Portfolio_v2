@@ -1,0 +1,115 @@
+.about > .container > img {
+  width: 250px;
+}
+
+.descriptions > h1 {
+  text-align: center;
+}
+
+.descriptions > p {
+  line-height: 150%;
+}
+
+.descriptions > .skills {
+  display: flex;
+  padding: 0 2em;
+  flex-direction: column;
+  gap: 1em;
+  margin: 0;
+  margin-top: 1em;
+}
+
+.descriptions > .skills > h2 {
+  align-self: center;
+  margin: 1rem 0 0 0;
+}
+
+.skills > .skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  place-items: center;
+}
+
+@media screen and (max-width: 300px) {
+  .about > .container  > img {
+    width: 200px;
+  }
+
+  .descriptions > p {
+    line-height: 150%;
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .descriptions > .skills {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 2em 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .descriptions > .skills > h2 {
+    margin: 0;
+  }
+
+  .skills > .skills-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .about > .container {
+    flex-direction: row;
+    gap: 2em;
+    margin: 0;
+  }
+
+  .about > .container > img {
+    flex: 1;
+    width: 400px;
+  }
+
+  .descriptions {
+    justify-content: flex-start;
+    padding: 0 1em;
+  }
+
+  .descriptions > h1 {
+    font-size: 3rem;
+    text-align: unset;
+  }
+  
+  .descriptions > p {
+    line-height: 150%;
+    font-size: 0.9rem;
+  }
+  
+  .descriptions > .skills {
+    border: none;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about > .container > img {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-height: 600px) {
+  .about > .container > img {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-height: 600px) {
+  .about > .container > img {
+    width: 450px;
+  }
+}

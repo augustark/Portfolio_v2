@@ -1,0 +1,70 @@
+footer {
+  flex: 0 1 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > .sc-container {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+  padding: 0.5em 1em;
+}
+
+footer > .sc-container > span {
+  position: relative;
+}
+
+footer > .sc-container > span::after {
+  position: absolute;
+  content: '';
+  width: 75%;
+  height: 2px;
+  right: -1;
+  top: 50%;
+  bottom: 50%;
+  border-radius: 1rem;
+  background: #000;
+  margin-left: 1rem;
+}
+
+footer > .sc-container > .sc-logos {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+footer > .sc-container > .sc-logos > img {
+  width: 1rem;
+}
+
+footer > .sc-container > .sc-logos > span {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  footer {
+    margin: 0;
+  }
+
+  footer > .sc-container {
+    border-radius: 6px; 
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    background: white;
+    box-shadow: 0 8px 15px 2px rgba(150, 150, 150, 0.25);
+    transition: 500ms;
+  }
+
+  footer > .sc-container:hover {
+    transform: scale(1.02);
+    transition: 250ms;
+    box-shadow: 0 8px 15px 2px rgba(150, 150, 150, 0.5);
+    cursor: pointer;
+  }
+
+  footer > .sc-container > .sc-logos > span {
+    display: inline;
+  }
+}

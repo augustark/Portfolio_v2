@@ -1,0 +1,54 @@
+.contact > .container > h1 {
+  margin-top: 0;
+}
+
+.contact > .container > .contact-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5em;
+  max-width: 500px;
+}
+
+.contact > .container > .contact-card > input {
+  padding: 0.8em;
+  border: 2px solid #CCC7DD;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.contact > .container > .contact-card > textarea {
+  min-height: 200px;
+  border: 2px solid #CCC7DD;
+  border-radius: 6px;
+  font-family: inherit;
+  padding: 1em;
+}
+
+.contact > .container > .contact-card > button {
+  padding: 0.8em 1em;
+  font-family: inherit;
+  align-self: flex-start;
+  border: 2px solid #CCC7DD;
+  background: none;
+  border-radius: 6px;
+}
+
+.contact > .container > .contact-card > button:focus-visible,
+.contact > .container > .contact-card > textarea:focus-visible,
+.contact > .container > .contact-card > input:focus-visible {
+  border-color: #000;
+  outline: none;
+}
+
+@media screen and (min-width: 880px) {
+  .contact > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact > .container > h1 {
+    font-size: 3.125rem;
+  }
+}
